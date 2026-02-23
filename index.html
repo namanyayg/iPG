@@ -3,6 +3,7 @@
 <head>
 <title>iPG</title>
 <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" type="text/css" href="style.css" />
 
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
@@ -88,15 +89,19 @@ $(document).keypress(function(e) {
 </div>
 
 
-<!-- Keyboard Control Reference -->
+<!-- Control Buttons -->
 <div class="controls">
-	<h1>Key Controls</h1>
+	<h1>Controls</h1>
 
-	<div class="key key-space">space</div>
-	<div class="act">to restart timer</div>
+	<button class="btn btn-restart" onclick="timer_restart()">
+		<span class="btn-key">space</span>
+		<span class="btn-label">Restart Timer</span>
+	</button>
 
-	<div class="key key-return">return</div>
-	<div class="act">to next question</div>
+	<button class="btn btn-next" onclick="next_q()">
+		<span class="btn-key">return</span>
+		<span class="btn-label">Next Question</span>
+	</button>
 </div>
 
 
